@@ -21,6 +21,7 @@ setup(
     include_package_data=True,
     packages=find_packages(),
     install_requires=['requests'],
+    download_url='https://github.com/CITGuru/tempmail/archive/1.0.0.tar.gz',
     py_modules=['tempmail2'],
     classifiers=[
         'Development Status :: 5 - Production/Stable',
