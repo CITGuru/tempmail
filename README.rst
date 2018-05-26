@@ -17,7 +17,7 @@ Installation
 
 Installing with pip::
 
-    $ pip install tempMil2
+    $ pip install tempMail2
 
 Usage
 -----
