@@ -8,7 +8,7 @@ Requirements
 
 `requests <https://crate.io/packages/requests/>`_ - required.
 
-Install ::
+You can install it through ::
 
  $ pip install requests
 
@@ -36,4 +36,3 @@ Generate email address and get emails from it::
     tm = TempMail()
     email = tm.get_email_address()  # v5gwnrnk7f@gnail.pw
     print tm.get_mailbox(email)  # list of emails
-
