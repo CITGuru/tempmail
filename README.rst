@@ -8,7 +8,7 @@ Requirements
 
 `requests <https://crate.io/packages/requests/>`_ - required.
 
-::
+Install ::
 
  $ pip install requests
 
