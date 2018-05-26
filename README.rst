@@ -22,17 +22,21 @@ Installing with pip::
 Usage
 -----
 
+Before you can use this, you need to get api key from https://market.mashape.com/Privatix/temp-mail.
+
+So create an account on Mashape and get the Mashape Api Key
+
 Get all emails from given email login and domain::
 
     from tempMail2 import TempMail
 
-    tm = TempMail(login='denis', domain='@gnail.pw')
+    tm = TempMail(api_key='apikey', login='denis', domain='@gnail.pw')
     print tm.get_mailbox()  # list of emails in denis@gnail.pw
 
 Generate email address and get emails from it::
 
     from tempMail2 import TempMail
 
-    tm = TempMail()
+    tm = TempMail(api_key='apikey')
     email = tm.get_email_address()  # v5gwnrnk7f@gnail.pw
     print tm.get_mailbox(email)  # list of emails

@@ -11,7 +11,7 @@ long_description = read('README.rst')
 
 setup(
     name='tempMail2',
-    version='1.0.1',
+    version='1.0.2',
     license='MIT',
     description='Python wrapper for online service which provides '
                 'temporary email address: https://temp-mail.org/ V2',
