@@ -17,21 +17,21 @@ Installation
 
 Installing with pip::
 
-    $ pip install tempmail2
+    $ pip install tempMil2
 
 Usage
 -----
 
 Get all emails from given email login and domain::
 
-    from tempmail2 import TempMail
+    from tempMail2 import TempMail
 
     tm = TempMail(login='denis', domain='@gnail.pw')
     print tm.get_mailbox()  # list of emails in denis@gnail.pw
 
 Generate email address and get emails from it::
 
-    from tempmail2 import TempMail
+    from tempMail2 import TempMail
 
     tm = TempMail()
     email = tm.get_email_address()  # v5gwnrnk7f@gnail.pw
