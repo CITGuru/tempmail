@@ -80,7 +80,7 @@ class TempMail(object):
 
         :param email: email address for generate md5 hash.
         """
-        return md5(email).hexdigest()
+        return md5(email.encode('utf-8')).hexdigest()
 
     def get_mailbox(self, email=None, email_hash=None):
         """
@@ -93,7 +93,7 @@ class TempMail(object):
         if email is None:
             email = self.get_email_address()
         if email_hash is None:
-            email_hash = self.get_hash(email)
+            email_hash = self.get_hash(email.encode('utf-8'))
 
         url = 'https://{0}/request/mail/id/{1}/format/json/'.format(
             self.api_domain, email_hash)
@@ -111,7 +111,7 @@ class TempMail(object):
         :param email_hash: (optional) md5 hash from email address.
         """
         if email_hash is None:
-            email_hash = self.get_hash(email)
+            email_hash = self.get_hash(email.encode('utf-8'))
 
         url = 'https://{0}/request/delete/id/{1}/format/json/'.format(
             self.api_domain, email_hash)
@@ -130,7 +130,7 @@ class TempMail(object):
         :param email_hash: (optional) md5 hash from email address.
         """
         if email_hash is None:
-            email_hash = self.get_hash(email)
+            email_hash = self.get_hash(email.encode('utf-8'))
 
         url = 'https://{0}/request/attachments/id/{1}/format/json/'.format(
             self.api_domain, email_hash)
@@ -149,7 +149,7 @@ class TempMail(object):
         :param email_hash: (optional) md5 hash from email address.
         """
         if email_hash is None:
-            email_hash = self.get_hash(email)
+            email_hash = self.get_hash(email.encode('utf-8'))
 
         url = 'https://{0}/request/one_mail/id/{1}/format/json/'.format(
             self.api_domain, email_hash)
@@ -169,7 +169,7 @@ class TempMail(object):
         :param email_hash: (optional) md5 hash from email address.
         """
         if email_hash is None:
-            email_hash = self.get_hash(email)
+            email_hash = self.get_hash(email.encode('utf-8'))
 
         url = 'https://{0}/request/source/id/{1}/format/json/'.format(
             self.api_domain, email_hash)
