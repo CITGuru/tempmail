@@ -16,7 +16,7 @@ class TempMail(object):
     Default value is ``privatix-temp-mail-v1.p.mashape.com``.
     """
 
-    def __init__(self, api_key, login=None, domain=None, api_domain='privatix-temp-mail-v1.p.mashape.com'):
+    def __init__(self, api_key, login=None, domain=None, api_domain='privatix-temp-mail-v1.p.rapidapi.com'):
         self.login = login
         self.domain = domain
         self.api_domain = api_domain
@@ -34,8 +34,8 @@ class TempMail(object):
             url = 'https://{0}/request/domains/format/json/'.format(
                 self.api_domain)
             req = requests.get(url, headers={
-                "X-Mashape-Key": self.api_key,
-                "Accept": "application/json"
+                'x-rapidapi-host': self.domain,
+                'x-rapidapi-key': self.api_key
             })
             domains = req.json()
             setattr(self, '_available_domains', domains)
@@ -102,7 +102,7 @@ class TempMail(object):
             "Accept": "application/json"
         })
         return req.json()
-    
+
     def delete_email(self, email, email_hash=None):
         """
         Delete a given email in a given email address
@@ -160,7 +160,7 @@ class TempMail(object):
         })
         return req.json()
 
-    
+
     def source_message(self, email, email_hash=None):
         """
         Source a given email in a given email address
