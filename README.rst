@@ -22,7 +22,7 @@ Installing with pip::
 Usage
 -----
 
-Before you can use this, you need to get api key from https://market.mashape.com/Privatix/temp-mail.
+Before you can use this, you need to get api key from https://rapidapi.com/Privatix/api/temp-mail.
 
 So create an account on Mashape and get the Mashape Api Key
 
