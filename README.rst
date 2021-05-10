@@ -31,7 +31,7 @@ Get all emails from given email login and domain::
     from tempMail2 import TempMail
 
     tm = TempMail(api_key='apikey', login='denis', domain='@gnail.pw')
-    print tm.get_mailbox()  # list of emails in denis@gnail.pw
+    print (tm.get_mailbox())  # list of emails in denis@gnail.pw
 
 Generate email address and get emails from it::
 
@@ -39,4 +39,4 @@ Generate email address and get emails from it::
 
     tm = TempMail(api_key='apikey')
     email = tm.get_email_address()  # v5gwnrnk7f@gnail.pw
-    print tm.get_mailbox(email)  # list of emails
+    print (tm.get_mailbox(email))  # list of emails
