@@ -9,7 +9,7 @@ Changes invloving docs are given letters, not any number increments (afaik, plea
 
 * Fix comment and docunentation errors and inaccuracies form past changes that wern't reflected in the docs (via NoshWare)
 * Add method docs (via NoshWare)
-* Update this file (via NoshWare)
+* Put an unessicarly extranious amount of changes in this file (via NoshWare)
 
 1.0.3 (2019-10-29 to 2021-01-05)
 ----------------
