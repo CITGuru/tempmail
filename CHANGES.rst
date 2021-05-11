@@ -2,7 +2,9 @@
 Changes
 =======
 
-Changes invloving docs are given letters, not any number increments (afaik, please correct me if I'm wrong I'm new to this system) -- Nosh Ware
+"Changes invloving docs are given letters, not any number increments.
+This is to avoid having to increment the vertion number for source controll jsut for doc updates.
+(afaik, please correct me if I'm wrong I'm new to this system)" -- Nosh Ware
 
 1.0.3a (2021-05-11)
 ----------------
