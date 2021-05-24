@@ -10,10 +10,10 @@ class TempMail(object):
     API Wrapper for service which provides temporary email address.
 
     :param login: (optional) login for email address.
-    :param domain: (optional) domain (from current available)
-    for email address.
+    :param domain: (optional) domain (from current available) for email address.
     :param api_domain: (optional) domain for temp-mail api.
-    Default value is ``privatix-temp-mail-v1.p.mashape.com``.
+    Default value is ``privatix-temp-mail-v1.p.rapidapi.com``.
+    :param api_ key: (required) your Rapid API app's key
     """
 
     def __init__(self, api_key, login=None, domain=None, api_domain='privatix-temp-mail-v1.p.rapidapi.com'):
